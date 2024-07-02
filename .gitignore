@@ -1,0 +1,21 @@
+# Ignore all files and folders by default
+*
+
+# Do not ignore specific folders and files
+!.gitignore
+!variables.tf
+!lambda/
+!lambda/lambda_function/
+!lambda/lambda_function/lambda_function.py
+!terraform/s3.tf
+
+# Ignore hidden directories
+.*/
+
+# Explicitly include hidden directories if needed
+!.gitignore
+
+# Ignore specific subfolders inside included folders
+terraform/.terraform/*
+terraform/terraform.tfstate
+terraform/terraform.tfstate.backup
